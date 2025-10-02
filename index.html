@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Harian Bilbil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📅 Jadwal Harian Bilbil</h1>
+
+  <!-- Tabs Hari -->
+  <div class="tabs">
+    <div class="tab active" data-day="senin">Senin</div>
+    <div class="tab" data-day="selasa">Selasa</div>
+    <div class="tab" data-day="rabu">Rabu</div>
+    <div class="tab" data-day="kamis">Kamis</div>
+    <div class="tab" data-day="jumat">Jumat</div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progress"></div>
+  </div>
+  <p id="progress-text">0% selesai</p>
+
+  <!-- ===================== SENIN ===================== -->
+  <ul class="task-list active" id="senin">
+    <li class="task" draggable="true"><span>04:40 - 04:58 | Bangun + wudhu</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>04:58 - 05:15 | Sholat Subuh</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:15 - 05:45 | Sarapan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:45 - 06:20 | Mandi + make up</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:20 - 06:40 | Beres-beres</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:40 - 07:00 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>08:00 - 10:30 | Kuliah: Manajemen Proyek ICT</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>10:30 - 12:00 | Kuliah: Sistem Enterprise</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:00 - 12:20 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:20 - 12:45 | Sholat Dzuhur + makan siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:00 - 15:00 | Istirahat / tidur siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:28 - 15:45 | Sholat Ashar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:45 - 18:00 | Belajar mandiri / organisasi SmartTech</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>18:20 - 18:35 | Sholat Maghrib + makan malam</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>19:28 - 19:40 | Sholat Isya</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:00 - 21:30 | Ngerjain tugas / coding project</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>21:30 - 22:30 | Santai</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>22:30 - 23:00 | Persiapan tidur</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>23:00 - 04:40 | Tidur</span><input type="checkbox"></li>
+  </ul>
+
+  <!-- ===================== SELASA ===================== -->
+  <ul class="task-list" id="selasa">
+    <li class="task" draggable="true"><span>04:40 - 04:58 | Bangun + wudhu</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>04:58 - 05:15 | Sholat Subuh</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:15 - 05:45 | Sarapan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:45 - 06:20 | Mandi + make up</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:20 - 06:40 | Beres-beres</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:40 - 07:00 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>08:50 - 10:30 | Kuliah: Basis Data Lanjut</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>10:30 - 12:00 | Praktikum Basis Data Lanjut</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:18 - 12:45 | Sholat Dzuhur + makan siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:00 - 15:30 | Kuliah: Data Mining</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:30 - 15:50 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:50 - 18:00 | Istirahat / tidur / belajar ringan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:28 - 15:45 | Sholat Ashar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>18:20 - 18:35 | Sholat Maghrib + makan malam</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>19:28 - 19:40 | Sholat Isya</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:00 - 21:30 | Ngerjain tugas / coding project</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>21:30 - 22:30 | Santai</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>22:30 - 23:00 | Persiapan tidur</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>23:00 - 04:40 | Tidur</span><input type="checkbox"></li>
+  </ul>
+
+  <!-- ===================== RABU ===================== -->
+  <ul class="task-list" id="rabu">
+    <li class="task" draggable="true"><span>04:40 - 04:58 | Bangun + wudhu</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>04:58 - 05:15 | Sholat Subuh</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:15 - 05:45 | Sarapan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:45 - 06:20 | Mandi + make up</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:20 - 06:40 | Beres-beres</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:40 - 07:00 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>08:00 - 10:30 | Kuliah: Analisis & Perancangan Sistem</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>10:30 - 13:00 | Kuliah: Sistem Keamanan Informasi</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:00 - 13:20 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:20 - 15:20 | Istirahat / tidur / belajar ringan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:28 - 15:45 | Sholat Ashar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:45 - 17:30 | Belajar / persiapan asistensi</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>17:30 - 17:50 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>18:00 - 20:01 | Asisten Lab</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:01 - 20:20 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:20 - 20:40 | Sholat Isya + makan malam ringan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:40 - 21:30 | Tugas / coding project</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>21:30 - 22:30 | Santai</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>22:30 - 23:00 | Persiapan tidur</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>23:00 - 04:40 | Tidur</span><input type="checkbox"></li>
+  </ul>
+
+  <!-- ===================== KAMIS ===================== -->
+  <ul class="task-list" id="kamis">
+    <li class="task" draggable="true"><span>04:40 - 04:58 | Bangun + wudhu</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>04:58 - 05:15 | Sholat Subuh</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:15 - 05:45 | Sarapan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:45 - 06:20 | Mandi + make up</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:20 - 06:40 | Beres-beres</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:40 - 07:00 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>08:00 - 10:16 | Asisten Lab</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>10:30 - 12:00 | Kuliah: PBO Lanjut</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:18 - 12:45 | Sholat Dzuhur + makan siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:00 - 14:30 | Praktikum PBO Lanjut</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>14:30 - 14:50 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:00 - 15:20 | Sholat Ashar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:20 - 18:00 | Istirahat / tidur / belajar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>18:20 - 18:35 | Sholat Maghrib + makan malam</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>19:28 - 19:40 | Sholat Isya</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:00 - 21:30 | Tugas / coding project</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>21:30 - 22:30 | Santai</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>22:30 - 23:00 | Persiapan tidur</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>23:00 - 04:40 | Tidur</span><input type="checkbox"></li>
+  </ul>
+
+  <!-- ===================== JUMAT ===================== -->
+  <ul class="task-list" id="jumat">
+    <li class="task" draggable="true"><span>04:40 - 04:58 | Bangun + wudhu</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>04:58 - 05:15 | Sholat Subuh</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:15 - 05:45 | Sarapan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>05:45 - 06:20 | Mandi + make up</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:20 - 06:40 | Beres-beres</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>06:40 - 07:00 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>08:50 - 10:30 | Kuliah: Front End Development</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>10:30 - 12:00 | Praktikum Front End Development</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:00 - 12:20 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>12:20 - 12:50 | Sholat Jumat + makan siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>13:00 - 15:20 | Istirahat / tidur siang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:28 - 15:45 | Sholat Ashar</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>15:45 - 17:30 | Belajar / persiapan asistensi</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>17:30 - 17:50 | Perjalanan ke kampus</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>18:00 - 20:01 | Asisten Lab</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:01 - 20:20 | Perjalanan pulang</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:20 - 20:40 | Sholat Isya + makan malam ringan</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>20:40 - 21:30 | Tugas / coding project</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>21:30 - 22:30 | Santai</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>22:30 - 23:00 | Persiapan tidur</span><input type="checkbox"></li>
+    <li class="task" draggable="true"><span>23:00 - 04:40 | Tidur</span><input type="checkbox"></li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
